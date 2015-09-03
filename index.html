@@ -1,0 +1,57 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+    <title>Tester</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <style type="text/css">
+    /* <link rel="stylesheet" href="css/style.css" /> */
+    .swipe,.swipe-wrap{overflow:hidden;position:relative}.swipe,.swipe-wrap,body{overflow:hidden}article,aside,b,body,dd,del,dfn,div,dl,dt,em,fieldset,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,li,nav,object,ol,p,q,samp,section,small,span,strong,table,tbody,td,tfoot,th,thead,tr,ul{margin:0;padding:0;border:0;outline:0;vertical-align:baseline}div{box-sizing:border-box}body{min-height:416px;background:#000;color:#fff;font-family:'Helvetica Neue',Helvetica,Aria,sans-serif;font-size:.9em;line-height:1}.swipe{visibility:hidden}.swipe-wrap img{position:absolute;top:0;left:auto;right:auto;bottom:0;max-width:100%;max-height:100%}.notice--alwaysPresent,.notice--interstitial{position:absolute;left:0;text-align:center;pointer-events:none}.notice--interstitial{top:0;padding:4em 2em 0 1.5em;width:100%;height:100%;background:rgba(0,0,0,.65);color:#4fdee6;font-size:23px;line-height:1.2}.notice--interstitial img{margin:25px 0;display:inline-block}.notice--interstitial hr{display:block;margin:100px 9% 0;width:auto;height:1.5px;border:0;background:rgba(255,255,255,.4)}small{color:#fff;font-size:.5em}.notice--alwaysPresent{bottom:0;margin:0;width:100%;height:55px;background:#000;color:#a6a6a6;font-size:.93em;vertical-align:top}.notice--alwaysPresent p{margin-top:-7px}.notice--alwaysPresent img{position:relative;top:16px;left:1px}.icon--down,.icon--up{position:absolute;padding:13px 0 0 18px;right:5%;width:60px;height:60px;border-radius:50%;font-size:2.2em;background-color:#2b2b2b;color:#2874C0}.icon--up{top:10%}.icon--down{bottom:10%}.icon--up-animate{-webkit-animation:moveUpAndDown 2s infinite;animation:moveUpAndDown 2s infinite}.icon--down-animate{-webkit-animation:moveDownAndUp 2s infinite;animation:moveDownAndUp 2s infinite}@-webkit-keyframes moveUpAndDown{0%,100%,30%,50%,80%{transform:translateY(0);-webkit-transform:translateY(0)}40%{-webkit-transform:translateY(-40px);transform:translateY(-40px)}60%{-webkit-transform:translateY(-35px);transform:translateY(-35px)}}@keyframes moveUpAndDown{0%,100%,30%,50%,80%{transform:translateY(0);-webkit-transform:translateY(0)}40%{-webkit-transform:translateY(-40px);transform:translateY(-40px)}60%{-webkit-transform:translateY(-35px);transform:translateY(-35px)}}@-webkit-keyframes moveDownAndUp{0%,100%,30%,50%,80%{transform:translateY(0);-webkit-transform:translateY(0)}40%{-webkit-transform:translateY(40px);transform:translateY(40px)}60%{-webkit-transform:translateY(35px);transform:translateY(35px)}}@keyframes moveDownAndUp{0%,100%,30%,50%,80%{transform:translateY(0);-webkit-transform:translateY(0)}40%{-webkit-transform:translateY(40px);transform:translateY(40px)}60%{-webkit-transform:translateY(35px);transform:translateY(35px)}}.is-hidden{display:none}.is-blurred{-webkit-filter:blur(5px);filter:blur(5px)}.fadeOut{transition:opacity 350ms ease-in-out;opacity:0;}
+    </style>
+</head>
+
+<body>
+
+<div id="gallery" class="swipe">
+    <div class="swipe-wrap">
+        <img src="./img/gallery/maja-kavcic-01.jpg" />
+        <img src="./img/gallery/maja-kavcic-02.jpg" />
+        <img src="./img/gallery/maja-kavcic-03.jpg" />
+        <img src="./img/gallery/maja-kavcic-04.jpg" />
+        <img src="./img/gallery/maja-kavcic-05.jpg" />
+        <img src="./img/gallery/maja-kavcic-06.jpg" />
+    </div>
+
+    <div id="notice-interstitial" class="notice is-hidden notice--interstitial">
+        Please swipe up/down<br/>
+        <img src="./img/swipe-up-down.png" width="25" height="88" alt="up or down" />
+        <br/>
+        to browse the<br/> photo gallery.
+        <hr/>
+        <small>This notice will close automatically.</small>
+    </div>
+    <div id="notice-alwaysPresent" class="notice is-hidden notice--alwaysPresent">
+        <p>Please swipe up/down<img src="./img/swipe-up-down.png" width="11" alt="up or down" />
+        to browse the photo gallery.</p>
+    </div>
+    <div id="notice-icon" class="notice is-hidden">
+        <div class="icon--up"><img src="./img/swipe-up.png" width="24" alt="swipe up" /></div>
+        <div class="icon--down"><img src="./img/swipe-down.png" width="24" alt="swipe down" /></div>
+    </div>
+    <div id="notice-animation" class="notice is-hidden">
+        <div class="icon--up icon--up-animate"><img src="./img/swipe-up.png" width="24" alt="swipe up" /></div>
+        <div class="icon--down icon--down-animate"><img src="./img/swipe-down.png" width="24" alt="swipe down" /></div>
+    </div>
+</div>
+
+<!-- Sources:
+<script type="text/javascript" src="src/hammer.js"></script>
+<script type="text/javascript" src="src/tracker.js"></script>
+<script async type="text/javascript" src="src/swipe-vertical.js"></script>
+<script async type="text/javascript" src="src/script.js"></script>
+-->
+<script async type="text/javascript" src="dist/app.js"></script>
+
+</body>
+</html>
